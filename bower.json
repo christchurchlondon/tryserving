@@ -1,0 +1,16 @@
+{
+	"name": "okfocus.github.io",
+	"version": "0.0.4",
+	"homepage": "http://okfoc.us",
+	"authors": [
+		"OKFocus"
+	],
+	"description": "OKFocus, Internet Legends",
+	"private": true,
+	"dependencies": {
+		"nodoubletapzoom": "https://gist.github.com/2047491.git",
+		"jquery": "~2.0.3",
+		"spin.js": "~1.3.2",
+		"tweenjs": "*"
+	}
+}
