@@ -10,7 +10,7 @@
             }
             body {
                 font-family: 'Helvetica Neue', Arial, sans-serif;
-                color: #fff;
+                color: #000;
             }
             h1 {
                 font-size: 22px;
@@ -32,11 +32,11 @@
                 transform: translate3d(-50%, -50%, 0);
             }
         </style>
-        <script src="../src/mx.js"></script>
-        <script src="../src/extensions/mx.scene.js"></script>
-        <script src="../src/extensions/mx.rotationControl.js"></script>
-        <script src="../src/primitives/mx.texturedBox.js"></script>
-        <script src="libs/tween.min.js"></script>
+        <script src="js/mx.js"></script>
+        <script src="js/extensions/mx.scene.js"></script>
+        <script src="js/extensions/mx.rotationControl.js"></script>
+        <script src="js/primitives/mx.texturedBox.js"></script>
+        <script src="js/libs/tween.min.js"></script>
         <script>
             function init () {
 
@@ -63,7 +63,7 @@
                     width: 804,
                     height: 804,
                     depth: 804,
-                    texture: 'images/universe.jpg',
+                    texture: 'images/office-pano.jpg',
                     overlap: 1 // overlap 1px to eliminate seams
                 })
                 scene.add(skybox)
