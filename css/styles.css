@@ -9,11 +9,20 @@ html, body {
 	overflow:hidden;
 }
 
+@font-face{ 
+	font-family: 'londrina';
+	src: url('../fonts/LondrinaSolid-Regular-webfont.eot');
+	src: url('../fonts/LondrinaSolid-Regular-webfont.eot?iefix') format('eot'),
+	     url('../fonts/LondrinaSolid-Regular-webfont.woff') format('woff'),
+	     url('../fonts/LondrinaSolid-Regular-webfont.ttf') format('truetype'),
+	     url('../fonts/LondrinaSolid-Regular-webfont.svg#webfont') format('svg');
+}
+
 body {
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'londrina', Arial, sans-serif;
 	color: #000;
 	font-weight:bold;
-	font-size:20px;
+	font-size:32px;
 }
 
 h1 {
@@ -75,12 +84,13 @@ a {
 	display:none;
 }
 
-.nav.top.right.dropdown a {
+.nav.top.right.dropdown a,
+.nav.bottom.right.dropdown a {
 	float: right;
 }
 
 .nav.top.dropdown:hover b{
-	background:black;
+	background:#38ab4a;
 	color:white;
 }
 
@@ -95,29 +105,54 @@ a {
 .nav.top.dropdown a:hover,
 .nav.bottom.dropdown a:hover {
 	color:white;
-	background:black;
+	background:#38ab4a;
+}
+.nav.top.dropdown a.families:hover,
+.nav.bottom.dropdown a.families:hover {
+	color: #ce684b;
+}
+.nav.top.dropdown a.prayer:hover,
+.nav.bottom.dropdown a.prayer:hover {
+	color: #00b1e8;
+}
+.nav.top.dropdown a.tech:hover,
+.nav.bottom.dropdown a.tech:hover {
+	color: #88449d;
+}
+.nav.top.dropdown a.production:hover,
+.nav.bottom.dropdown a.production:hover {
+	color: #0099a2;
+}
+.nav.top.dropdown a.welcome:hover,
+.nav.bottom.dropdown a.welcome:hover {
+	color: #fdc216;
+}
+.nav.top.dropdown a.worship:hover,
+.nav.bottom.dropdown a.worship:hover {
+	color: #e30083;
 }
 
 .nav.top.left a:hover:after,
 .nav.bottom.left a:hover:after {
-	content: " ← " attr(data);
+/* 	content: " ← " attr(data); */
+	content: " << " attr(data);
 	border-right:1px solid black;
 	padding-right:2px;
 	padding-left:4px;
 	font-weight:normal;
-	font-size:12px;
+	font-size:22px;
 	vertical-align:middle;
 }
 
 .nav.top.right a:hover:before,
 .nav.bottom.right a:hover:before {
-	content:open-quote attr(data) close-quote " → " ;
+/* 	content:attr(data) " → " ; */
+	content: " >> " attr(data);
 	border-right:1px solid black;
 	padding-right:2px;
 	font-weight:normal;
-	font-size:12px;
+	font-size:22px;
 	vertical-align:middle;
-	font-style:italic;
 }
 
 span {
