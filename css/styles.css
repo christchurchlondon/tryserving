@@ -147,7 +147,7 @@ a {
 .nav.top.right a:hover:before,
 .nav.bottom.right a:hover:before {
 /* 	content:attr(data) " → " ; */
-	content: " >> " attr(data);
+	content: attr(data) " >> ";
 	border-right:1px solid black;
 	padding-right:2px;
 	font-weight:normal;
@@ -189,6 +189,7 @@ span date {
 	color:white;
 }
 
+/*
 @media only screen and (max-device-width: 480px) {
 	span.mobile{
 		display:inline-block;
@@ -197,3 +198,4 @@ span date {
 		display:none;
 	}
 }
+*/
