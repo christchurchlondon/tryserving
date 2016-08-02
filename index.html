@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>OKFocus</title>
+		<title>Try... Serving</title>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 		<meta name="keywords" content=""/>
@@ -16,71 +16,46 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="shortcut icon" href=""/>
-		<link rel="image_src" href=""/>
 		<link rel="stylesheet" href="css/app.css?1">
-		<script src="js/live.min.js"></script>
-		<script>
-			window.addEventListener("load",function() {
-				init()
-				window.scrollTo(0,0)
-			}, false);
-		</script>
 	</head>
 	<body>
-		<div id="pano-rapper">
-			<div id="backgroundz"></div>
-			<span class="top left nav dropdown">
-				<b>Selected Work</b>
-				<a target="_blank" data-okimage="https://luckyplop.s3.amazonaws.com/p/e4c55027ed7b76b86b4d665c7c3b912e.gif" href="http://good-music.com" data="Website development and design for Kanye West's record label, Good Music">Good Music <date>11/15</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/d964214af08d1f371e753a844b576a323b566cad.jpg" href="http://mikewillmade.it" data="Play your keyboard like an instrument on this site for super producer Mike Will Made-It">Mike Will Made-It <date>12/14</date></a>
-				<!--<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/38cbb225bf60b2fc6f4533671ddaaba25ace7058.jpg" href="http://nicopanda.com" data="Website development and design for Nicola Formichetti's fashion label">Nicopanda <date>9/14</date></a>-->
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/f605a205d612c072fcc9f9332c8ddbfb20070e6a.jpg" href="http://okfoc.us/rbma-ny/" data="Website for Red Bull Music Academy NYC Festival.">RBMA NYC <date>3/14</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/39636a7f2d23d48a945abd5641546e68ff54b0cf.jpg" href="http://okfoc.us/kenzo/" data="This bleeding edge 3d website for Kenzo and Blue Marine Foundation raises awareness about overfishing.">Kenzo - No Fish No Nothing <date>3/14</date></a>
-				<!--
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/211a4e287c068f36b1141938cffa87c00a19b39f.png" href="http://soylent.me" data="Website and branding for most the futuristic food on earth.">Soylent <date>5/14</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/9321ee71b88ef98730285c45c6d391d556f7de83.jpg" href="http://apply.redbullmusicacademy.com" data="Application site for 2014 Red Bull Music Academy in Tokyo.">Red Bull Music Academy <date>1/14</date></a>-->
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/438b5df3583c5cdca75ad93344a407951867a949.jpg" href="http://www.beentrill.com" data="Ecom site for cutting edge clothing company Been Trill.">Been Trill Website <date>1/14</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/74a38f42ebd6ec85a8ea8b3d6137168701d7c256.png" href="https://itunes.apple.com/us/app/drake-shake/id765748888?ls=1&mt=8" data="Finally, an App that lets the world to easily add Drake to photos.">Drake Shake <date>12/13</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/ec0be3b8468e2ef879e461a9de61c67efed157f0.jpg" href="http://feellondon.herokuapp.com/pano" data="Built and designed website for Nike event promoting hyperfeel, custom 360˚ pano and registration system.">Nike, Feel London <date>10/13</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/c2d574f0bc36feaa9879f6ba7756ca6b1190569b.gif" href="http://paddleson2.tumblr.com/" data="Designed / developed Phillips Paddles On Identity and website where users submit their work through Tumblr to be considered for the auction.">Phillips, Paddles On <date>9/13</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/27fd2a0d9932a8f327740da98a405e02273433a5.jpg"  href="http://newmoticons.com/" data="Cool emoticon generator we made in house for fun. ">Newmoticons <date>8/13</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/d018d6b44c84a730fbd641d7653ef34f0358d0ff.jpg" href="http://www.treasuredance.com/" data="An interactive music video where fans create the content via instagram with a hashtag.">Bruno Mars, Treasure <date>7/13</date></a>
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/40542b28bc06df6b6652701d7f116ca8a5fc8ce9.jpg" href="http://foxadhd.com/" data="Strategy and concepts for the online presence of Fox Network's new animated series, Animation Domination High Definition.">FOX/ADHD <date>7/13</date></a>
-				
-				<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/b29809cebcacfe857f52cdf15fb82ec318260de7.jpg" href="http://wheresthepixel.com/" data="The pixel that went viral.">Wheres The Pixel? <date>2/12</date></a>
-			</span>
+		<div id="backgroundz"></div>
+		<!-- Top Left: Central --> 
+		<span class="top left nav dropdown">
+			<b>Central</b>
+			<a href="" data="Keep CCL singing." data-okimage='img/p+fu.gif'>Try... Worship</a>
+			<a href="" data="Keep CCL growing." data-okimage='img/flowers.jpg'>Try... Families</a>
+		</span>
 
-			<span class="bottom right nav">
-				<a href="mailto:frontdesk@okfoc.us?subject=Portfolio Request">Portfolio Available Upon Request</a>
-			</span>
-			<span class="bottom left nav">
-				<a href="http://twitter.com/okfocus" target="_blank">@OKFocus</a> /	<a href="http://facebook.com/okfocus" target="_blank">FB</a> / <a href="http://github.com/okfocus" target="_blank">GitHub</a> / <a href="mailto:frontdesk@okfoc.us?subject=Hello OKFocus!">E-Mail</a>
-			</span>
-			<span class="nav bottom right mobile">
-				<a href="mailto:frontdesk@okfoc.us?subject=Hey OKFocus" target="_blank">Contact</a> /	<a href="https://maps.google.com/maps?q=11-11+44th+rd+long+island+city+ny&hnear=11-11+44th+Rd,+Long+Island+City,+New+York+11101&gl=us&t=m&z=16" target="_blank">Map</a>
-			</span>
-
+		<!-- Bottom Right: Westend -->
+		<span class="bottom right nav dropdown">
+			<a href="" data="Keep CCL singing." data-okimage='img/stress.gif'>Try... Worship</a>
+			<b>Westend</b>
+		</span>
 		
+		<!-- Bottom Left: South -->
+		<span class="bottom left nav dropdown">
+			<a href="" data="Keep CCL singing." data-okimage='img/stress.gif'>Try... Worship</a>
+			<b>South</b>
+		</span>
+		
+		<!-- Top Right: East -->
 		<span class="top right nav dropdown">
-			<b>Selected Press</b>
-			<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/0c46cef75299a9c040d22d581b943d6a6f3596e9.png"  href="http://www.nytimes.com/2014/07/10/fashion/ryder-ripps-an-artist-of-the-internet.html"  data="Computer skills do not usually correlate with a strong fashion sense.">The New York Times <date> 7/14</date></a>
-			<a target="_blank" data-okimage="https://s3.amazonaws.com/luckyplop/05555f60ced21b2e883afcb9dec3637acd7e79bf.png"  href="http://www.thefader.com/2013/12/04/creative-agency-okfocus-jogging-tobe/"  data="groups who are making boundary-pushing work at the intersections of art and commerce..">Fader Magzine <date> 12/13</date></a>
-<!--
-			<a target="_blank" data-okimage="assets/images/idmag.jpg" href="http://i-d.vice.com/en_gb/watch/episode/548/think-aloud-future-fashion" data="internet wizards OKFocus explain how computers can revolutionise fashion">iD Magazine  <date> 11/13</date></a>
--->
-			<a target="_blank" data-okimage="assets/images/vice.jpg" href="http://www.vice.com/the-creators-project/meet-okfocus" data="likes to take the path less trodden when it comes to website design..">Creators Project <date> 4/13</date></a>
-			<a target="_blank" href="http://adage.com/article/creativity-50/creativity-50-2012-ryder-ripps-jonathan-vingiano-founders-okfocus/235762/s" data-okimage="assets/images/adage.jpg" data="'Function over form' is the motto of this breakout creative studio..">Ad Age <date> 12/12</date></a>
-			<a target="_blank" href="http://online.wsj.com/news/articles/SB10001424052970203413304577086774161100582" data-okimage="assets/images/wsj.jpg" data="Bringing a little showmanship to the publicity field...">Wall Street Journal <date> 12/11</date></a>
+			<b>East</b>
+			<a href="" data="Keep CCL singing." data-okimage='img/stress.gif'>Try... Worship</a>
 		</span>
-		<span class="bottom right nav">
-			<a href="mailto:frontdesk@okfoc.us?subject=Portfolio Request">Portfolio Available Upon Request</a>
-		</span>
-		<span class="bottom left nav">
-			<a href="http://twitter.com/okfocus" target="_blank">@OKFocus</a> /	<a href="http://facebook.com/okfocus" target="_blank">FB</a> / <a href="http://github.com/okfocus" target="_blank">GitHub</a> / <a href="mailto:frontdesk@okfoc.us?subject=Hello OKFocus!">E-Mail</a>
-		</span>
-		<span class="nav bottom right mobile">
-			<a href="mailto:frontdesk@okfoc.us?subject=Hey OKFocus" target="_blank">Contact</a> /	<a href="https://maps.google.com/maps?q=11-11+44th+rd+long+island+city+ny&hnear=11-11+44th+Rd,+Long+Island+City,+New+York+11101&gl=us&t=m&z=16" target="_blank">Map</a>
-		</span>
-	</div>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/okhover.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $('a').okhover({
+			      fadeIn: true,
+			      fadeOut: true,
+			      fadeInDuration: 200,
+			      el: '#backgroundz'
+			  });  
+			});
+		</script>
 	</body>
 </html>

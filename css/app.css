@@ -85,6 +85,8 @@ a {
 	display: none;
 }
 
+/* NAV
+* ================*/
 .nav {
 	position:fixed;
 	z-index:100;
@@ -111,7 +113,8 @@ a {
 	bottom:0;
 }
 
-.nav.top.dropdown a{
+.nav.top.dropdown a,
+.nav.bottom.dropdown a{
 	-webkit-transition:all 0.2s linear;
 	-moz-transition:all 0.2s linear;
 	float:left;
@@ -128,19 +131,22 @@ a {
 	color:white;
 }
 
-.nav.top.dropdown:hover a{
+.nav.top.dropdown:hover a,
+.nav.bottom.dropdown:hover a{
 	display:inline-block;
 	background:white;
 	color:#000;
 	opacity:1;
 }
 
-.nav.top.dropdown a:hover{
+.nav.top.dropdown a:hover,
+.nav.bottom.dropdown a:hover {
 	color:white;
 	background:black;
 }
 
-.nav.top.left a:hover:after{
+.nav.top.left a:hover:after,
+.nav.bottom.left a:hover:after {
 	content: " ← " attr(data);
 	border-right:1px solid black;
 	padding-right:2px;
@@ -150,7 +156,8 @@ a {
 	vertical-align:middle;
 }
 
-.nav.top.right a:hover:before{
+.nav.top.right a:hover:before,
+.nav.bottom.right a:hover:before {
 	content:open-quote attr(data) close-quote " → " ;
 	border-right:1px solid black;
 	padding-right:2px;
@@ -200,18 +207,5 @@ span date {
 	}
 	span{
 		display:none;
-	}
-}
-
-@media screen and (orientation:portrait) {
-	body:after{
-		content:"Hey there! For best viewing we suggest flipping your device sideways and spinning around in circles :)";
-		background:white;
-		position:fixed;
-		width:200px;
-		padding:5px;
-		top:5px;
-		left:5px;
-		z-index:444;
 	}
 }
