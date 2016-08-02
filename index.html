@@ -46,15 +46,32 @@
 		</span>
 		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script src='js/okvideo.js'></script>
 		<script type="text/javascript" src="js/okhover.js"></script>
 		<script>
+			$(function(){
+				$.okvideo({ video: 'https://www.youtube.com/watch?v=A7zdxqfggsI', 
+				            volume: 50, 
+				            loop: true,
+				            hd:true, 
+				            adproof: true,
+				            annotations: false,
+				            onFinished: function() { console.log('finished') },
+				            unstarted: function() { console.log('unstarted') },
+				            onReady: function() { console.log('onready') },
+				            onPlay: function() { console.log('onplay') },
+				            onPause: function() { console.log('pause') },
+				            buffering: function() { console.log('buffering') },
+				            cued: function() { console.log('cued') },
+				});
+			});
 			$(document).ready(function(){
-			  $('a').okhover({
-			      fadeIn: true,
-			      fadeOut: true,
-			      fadeInDuration: 200,
-			      el: '#backgroundz'
-			  });  
+				$('a').okhover({
+					fadeIn: true,
+					fadeOut: true,
+					fadeInDuration: 200,
+					el: '#backgroundz'
+				});  
 			});
 		</script>
 	</body>
