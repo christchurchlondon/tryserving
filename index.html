@@ -16,10 +16,10 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="shortcut icon" href=""/>
-		<link rel="stylesheet" href="css/app.css?1">
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-		<div id="backgroundz"></div>
+		<div id="hovers"></div>
 		<!-- Top Left: Central --> 
 		<span class="top left nav dropdown">
 			<b>Central</b>
@@ -51,7 +51,7 @@
 		<script>
 			$(function(){
 				$.okvideo({ video: 'https://www.youtube.com/watch?v=A7zdxqfggsI', 
-				            volume: 50, 
+				            volume: 0, 
 				            loop: true,
 				            hd:true, 
 				            adproof: true,
@@ -70,7 +70,7 @@
 					fadeIn: true,
 					fadeOut: true,
 					fadeInDuration: 200,
-					el: '#backgroundz'
+					el: '#hovers'
 				});  
 			});
 		</script>
