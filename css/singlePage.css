@@ -1,18 +1,21 @@
 /* Header
 *===================*/
-
 #section0 {
+	background-position: center center;
+	background-repeat: no-repeat;
 	background-size:cover;
 }
 .logo-holder {
 	width:100%; 
 	height:100%; 
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 /* What page? */
-#section0 {
-	background:url(../img/bg/central-worship.jpg);
+.central.worship #section0 {
+	background-image:url(../img/bg/central-worship.jpg);
 }
 .worship .logo-holder {
-	background:url(../img/logos/worship-logo.png) center center no-repeat;
+	background-image:url(../img/logos/worship-logo.png);
 }
