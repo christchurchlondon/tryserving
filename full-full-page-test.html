@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+	<title>Try... Serving</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta property="og:title" content=""/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="" />
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" href=""/>
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" href="css/styles.css" charset="utf-8">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/okvideo.js"></script>
+	<script type="text/javascript" src="js/okhover.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['home', 'central', 'east', 'south', 'westend'],
+				scrollOverflow: false,
+				controlArrows: true,
+				verticalCentered: true,
+				animateAnchor: false
+			});
+			$('a').okhover({
+				fadeIn: true,
+				fadeOut: true,
+				fadeInDuration: 200,
+				el: '#hovers'
+			}); 
+		});
+		$(function(){
+			$.okvideo({ video: 'https://www.youtube.com/watch?v=cEP_Bx4-vhM', 
+			            volume: 0, 
+			            loop: true,
+			            hd:true, 
+			            adproof: true,
+			            annotations: false,
+			            onFinished: function() { console.log('finished') },
+			            unstarted: function() { console.log('unstarted') },
+			            onReady: function() { console.log('onready') },
+			            onPlay: function() { console.log('onplay') },
+			            onPause: function() { console.log('pause') },
+			            buffering: function() { console.log('buffering') },
+			            cued: function() { console.log('cued') },
+			});
+		});
+	</script>
+	
+</head>
+<body>
+<div id="fullpage">
+	
+	<!-- Vid Section -->
+	<div class="section" id="section0">
+		<!-- Okhover Layer -->
+		<div id="hovers"></div>
+		
+		<!-- Corner Navs -->
+		<!-- Top Left: Central --> 
+		<span class="top left nav dropdown">
+			<b>Central</b>
+			<a class="families" href="#central/c-families" data="Keep CCL growing." data-okimage='img/logos/families-logo.png'>Try... Families</a>
+			<a class="prayer" href="#central/c-prayer" data="Keep CCL looking up." data-okimage='img/logos/prayer-logo.png'>Try... Prayer Team</a>
+			<a class="production" href="#central/c-production" data="Keep CCL running." data-okimage='img/logos/production-logo.png'>Try... Production</a>
+			<a class="tech" href="#central/c-tech" data="Keep CCL switched on." data-okimage='img/logos/tech-logo.png'>Try... Tech</a>
+			<a class="welcome" href="#central/c-welcome" data="Keep CCL smiling." data-okimage='img/logos/welcome-logo.png'>Try... Welcome</a>
+			<a class="worship" href="#central/ce-worship" data="Keep CCL singing." data-okimage='img/logos/worship-logo.png'>Try... Worship</a>
+		</span>
+
+		<!-- Bottom Right: Westend -->
+		<span class="bottom right nav dropdown">
+			<a class="prayer" href="" data="Keep CCL looking up." data-okimage='img/logos/prayer-logo.png'>Try... Prayer Team</a>
+			<a class="production" href="" data="Keep CCL running." data-okimage='img/logos/production-logo.png'>Try... Production</a>
+			<a class="tech" href="" data="Keep CCL switched on." data-okimage='img/logos/tech-logo.png'>Try... Tech</a>
+			<a class="welcome" href="" data="Keep CCL smiling." data-okimage='img/logos/welcome-logo.png'>Try... Welcome</a>
+			<a class="worship" href="" data="Keep CCL singing." data-okimage='img/logos/worship-logo.png'>Try... Worship</a>
+			<b>Westend</b>
+		</span>
+		
+		<!-- Bottom Left: South -->
+		<span class="bottom left nav dropdown">
+			<a class="families" href="" data="Keep CCL growing." data-okimage='img/logos/families-logo.png'>Try... Families</a>
+			<a class="prayer" href="" data="Keep CCL looking up." data-okimage='img/logos/prayer-logo.png'>Try... Prayer Team</a>
+			<a class="production" href="" data="Keep CCL running." data-okimage='img/logos/production-logo.png'>Try... Production</a>
+			<a class="tech" href="" data="Keep CCL switched on." data-okimage='img/logos/tech-logo.png'>Try... Tech</a>
+			<a class="welcome" href="" data="Keep CCL smiling." data-okimage='img/logos/welcome-logo.png'>Try... Welcome</a>
+			<a class="worship" href="" data="Keep CCL singing." data-okimage='img/logos/worship-logo.png'>Try... Worship</a>
+			<b>South</b>
+			
+		</span>
+		
+		<!-- Top Right: East -->
+		<span class="top right nav dropdown">
+			<b>East</b>
+			<a class="prayer" href="" data="Keep CCL looking up." data-okimage='img/logos/prayer-logo.png'>Try... Prayer Team</a>
+			<a class="production" href="" data="Keep CCL running." data-okimage='img/logos/production-logo.png'>Try... Production</a>
+			<a class="welcome" href="" data="Keep CCL smiling." data-okimage='img/logos/welcome-logo.png'>Try... Welcome</a>
+			<a class="worship" href="" data="Keep CCL singing." data-okimage='img/logos/worship-logo.png'>Try... Worship</a>
+		</span>
+	</div>
+	
+	<!-- Central Section -->
+	<div class="section" id="section1">
+	    <div class="slide central families" data-anchor="c-families">
+		    <img data-src="img/logos/families-logo.png" alt="Try... Families" />
+<!-- 		    <p>Families - We love families at ChristChurch London. We have a fantastic team of volunteers who run the Crèche, Jumping Beans and Kids' Club, and are always on the lookout for more people to join our ranks. Sign up below or drop us a line to find out more.</p> -->
+		</div>
+		<div class="slide central prayer" data-anchor="c-prayer">
+		    <img data-src="img/logos/prayer-logo.png" alt="Try... Prayer" />
+		</div>
+		<div class="slide central production" data-anchor="c-production">
+		    <h1>Production</h1>
+		</div>
+		<div class="slide central tech" data-anchor="c-tech">
+		    <h1>Tech</h1>
+		</div>
+		<div class="slide central welcome" data-anchor="c-welcome">
+		    <h1>Welcome</h1>
+		</div>
+		<div class="slide central worship" data-anchor="ce-worship">
+		    <h1>Worship</h1>
+		</div>
+	</div>
+	
+	<!-- East Section -->
+	<div class="section" id="section2">
+		<div class="slide east families" id="slide1">
+		    <div class="logo-holder"></div>
+		</div>
+		<div class="slide east prayer" id="slide2">
+		    <h1>Prayer</h1>
+		</div>
+		<div class="slide east production" id="slide3">
+		    <h1>Production</h1>
+		</div>
+	</div>
+	
+	<!-- South Section -->
+	<div class="section" id="section3">
+	</div>
+	
+	<!-- Westend Section -->
+	<div class="section" id="section4">
+	</div>
+</div>
+</body>
+</html>
