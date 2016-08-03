@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+	<title>Try... Serving</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<meta property="og:title" content=""/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:image" content="" />
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" href=""/>
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" href="css/styles.css" charset="utf-8">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/okvideo.js"></script>
+	<script type="text/javascript" src="js/okhover.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['Home', 'Central', 'East', 'South', 'Westend'],
+				sectionsColor: ['', '#939FAA', '#323539', '#FFF', '#AAA'],
+				scrollOverflow: true,
+				scrollOverflowOptions: {
+					scrollbars: true,
+			        mouseWheel: true,
+			        hideScrollbars: false,
+			        fadeScrollbars: false,
+			        disableMouse: true
+				}
+			});
+			$('a').okhover({
+				fadeIn: true,
+				fadeOut: true,
+				fadeInDuration: 200,
+				el: '#hovers'
+			}); 
+		});
+		$(function(){
+			$.okvideo({ video: 'https://www.youtube.com/watch?v=cEP_Bx4-vhM', 
+			            volume: 0, 
+			            loop: true,
+			            hd:true, 
+			            adproof: true,
+			            annotations: false,
+			            onFinished: function() { console.log('finished') },
+			            unstarted: function() { console.log('unstarted') },
+			            onReady: function() { console.log('onready') },
+			            onPlay: function() { console.log('onplay') },
+			            onPause: function() { console.log('pause') },
+			            buffering: function() { console.log('buffering') },
+			            cued: function() { console.log('cued') },
+			});
+		});
+	</script>
+	
+</head>
+<body>
+<div id="fullpage">
+	
+	<!-- Vid Section -->
+	<div class="section" id="section0">
+		
+		<!-- Okhover Layer -->
+		<div id="hovers"></div>
+		
+		<!-- Corner Navs -->
+		<!-- Top Left: Central --> 
+		<span class="top left nav dropdown">
+			<b>Central</b>
+			<a class="families" href="#Central" data="Keep CCL growing." data-okimage='img/families-logo.png'>Try... Families</a>
+			<a class="prayer" href="#Central/1" data="Keep CCL looking up." data-okimage='img/prayer-logo.png'>Try... Prayer Team</a>
+			<a class="production" href="#Central/2" data="Keep CCL running." data-okimage='img/production-logo.png'>Try... Production</a>
+			<a class="tech" href="" data="Keep CCL switched on." data-okimage='img/tech-logo.png'>Try... Tech</a>
+			<a class="welcome" href="" data="Keep CCL smiling." data-okimage='img/welcome-logo.png'>Try... Welcome</a>
+			<a class="worship" href="try-worship.html" data="Keep CCL singing." data-okimage='img/worship-logo.png'>Try... Worship</a>
+		</span>
+
+		<!-- Bottom Right: Westend -->
+		<span class="bottom right nav dropdown">
+			<a class="prayer" href="" data="Keep CCL looking up." data-okimage='img/prayer-logo.png'>Try... Prayer Team</a>
+			<a class="production" href="" data="Keep CCL running." data-okimage='img/production-logo.png'>Try... Production</a>
+			<a class="tech" href="" data="Keep CCL switched on." data-okimage='img/tech-logo.png'>Try... Tech</a>
+			<a class="welcome" href="" data="Keep CCL smiling." data-okimage='img/welcome-logo.png'>Try... Welcome</a>
+			<a class="worship" href="" data="Keep CCL singing." data-okimage='img/worship-logo.png'>Try... Worship</a>
+			<b>Westend</b>
+		</span>
+		
+		<!-- Bottom Left: South -->
+		<span class="bottom left nav dropdown">
+			<a class="families" href="" data="Keep CCL growing." data-okimage='img/families-logo.png'>Try... Families</a>
+			<a class="prayer" href="" data="Keep CCL looking up." data-okimage='img/prayer-logo.png'>Try... Prayer Team</a>
+			<a class="production" href="" data="Keep CCL running." data-okimage='img/production-logo.png'>Try... Production</a>
+			<a class="tech" href="" data="Keep CCL switched on." data-okimage='img/tech-logo.png'>Try... Tech</a>
+			<a class="welcome" href="" data="Keep CCL smiling." data-okimage='img/welcome-logo.png'>Try... Welcome</a>
+			<a class="worship" href="" data="Keep CCL singing." data-okimage='img/worship-logo.png'>Try... Worship</a>
+			<b>South</b>
+			
+		</span>
+		
+		<!-- Top Right: East -->
+		<span class="top right nav dropdown">
+			<b>East</b>
+			<a class="prayer" href="" data="Keep CCL looking up." data-okimage='img/prayer-logo.png'>Try... Prayer Team</a>
+			<a class="production" href="" data="Keep CCL running." data-okimage='img/production-logo.png'>Try... Production</a>
+			<a class="welcome" href="" data="Keep CCL smiling." data-okimage='img/welcome-logo.png'>Try... Welcome</a>
+			<a class="worship" href="" data="Keep CCL singing." data-okimage='img/worship-logo.png'>Try... Worship</a>
+		</span>
+	</div>
+	
+	<!-- Central Section -->
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+		    <h1>Families</h1>
+		</div>
+		<div class="slide" id="slide1">
+		    <h1>Prayer</h1>
+		</div>
+		<div class="slide" id="slide1">
+		    <h1>Production</h1>
+		</div>
+	</div>
+	
+	<!-- East Section -->
+	<div class="section" id="section2">
+	</div>
+	
+	<!-- South Section -->
+	<div class="section" id="section3">
+	</div>
+	
+	<!-- Westend Section -->
+	<div class="section" id="section4">
+	</div>
+</div>
+</body>
+</html>
