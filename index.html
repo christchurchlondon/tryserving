@@ -73,7 +73,7 @@
 <!-- 		<img src="img/logos/tryserving-logo.png" alt="Try Serving" /> -->
 		<img src="img/logos/all-logos.png" alt="Try Serving" />
 		<p class="homeText">Only you can share your unique gifts.<br/> We hope you find a place to do that on one of our many serving teams.</p>
-		<p class="homeText">Throughout August and September we are asking you to commit to one session with your chosen team. You can help, observe or just chat to one of the team. If you want to follow it up after that, we’d love to hear from you.</p>
+		<p class="homeText">Throughout August and September we are asking you to consider committing to one session with your chosen team. You can help, observe or just chat to one of the team. If you want to follow it up after that, we’d love to hear from you.</p>
 	</div>
 	
 	<!-- Families Section -->
@@ -192,7 +192,7 @@
 				 <input class="east"  type="checkbox" name="east-check" value="east">
 			</div>	 	 
 			<!-- Name -->
-			<div class="field">
+			<div class="field name">
 			    <label class="worshipText" for="name">Name:</label>
 			    <input type="text" id="name" name="name" required>
 			</div>
@@ -217,7 +217,7 @@
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 			anchors: ['home', 'families', 'prayer', 'production', 'tech', 'welcome', 'worship', 'imin'],
-			sectionsColor: [''],
+			responsiveHeight: 600
 		});
 	});
 	$(function(){
@@ -237,5 +237,6 @@
 		});
 	});
 </script>
+
 </body>
 </html>

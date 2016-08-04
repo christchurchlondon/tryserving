@@ -302,6 +302,9 @@ button:focus {
   margin: 8px 8px;
   float: left;
 }
+.field.name {
+	clear: both;
+}
 .field.submit {
 	margin-top: 64px;
 	text-align: center;
