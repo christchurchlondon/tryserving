@@ -32,7 +32,7 @@ a {
 	padding:2px;
 }
 
-/* NAV
+/* Nav
 /* ======================*/
 #hovers{
 	position:absolute;
@@ -196,50 +196,29 @@ span date {
 	padding: 64px;
 }
 
-/*Central Section && Slides
-* --------------------------------------- */
-#section0{
+/* To edit  ---> */
+/*
+#section0 {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:cover;
 }
-.slide.central.families{
-	background-image: url(../img/bg/central-families.jpg);
+.logo-holder {
+	width:100%; 
+	height:100%; 
+	background-position: center center;
+	background-repeat: no-repeat;
 }
-.slide.central.prayer{
-	background-image: url(../img/bg/all-prayer.jpg);
+
+/* What page? */
+.central.worship #section0 {
+	background-image:url(../img/bg/central-worship.jpg);
 }
-.slide.central.production{
-	background-image: url(../img/bg/central-production.jpg);
+.worship .logo-holder {
+	background-image:url(../img/logos/worship-logo.png);
 }
-.slide.central.tech{
-	background-image: url(../img/bg/central-tech.jpg);
-}
-.slide.central.worship{
-	background-image: url(../img/bg/central-worship.jpg);
-}
-.slide.central.welcome{
-	background-image: url(../img/bg/central-welcome.jpg);
-}
-/*East Section && Slides
-* --------------------------------------- */
-#section1{
-}
-.slide.east.families{
-	background-image: url(../img/bg/east-families.jpg);
-}
-.slide.east.prayer{
-	background-image: url(../img/bg/all-prayer.jpg);
-}
-.slide.east.production{
-	background-image: url(../img/bg/east-production.jpg);
-}
-.slide.east.tech{
-	background-image: url(../img/bg/east-tech.jpg);
-}
-.slide.east.worship{
-	background-image: url(../img/bg/east-worship.jpg);
-}
-.slide.east.welcome{
-	background-image: url(../img/bg/east-welcome.jpg);
-}
+*/
+
 /* Media Queries
 /* ======================*/
 
