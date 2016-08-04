@@ -128,52 +128,82 @@
 	<div class="section" id="section7">
 	    <div id="form-messages"></div>
 	    <form id="ajax-contact" method="post" action="mailer.php">
-			<p>I'M IN: (tick as appropriate)
-			<!-- Checklist -->
-			<div class="field">
+			<p><span class="greenText">I'M IN:</span> <span class="prayerText">(tick as appropriate)</span>
+			<!-- Team -->
+			<div class="field checkbox">
 				 <label for="families-check">
 				 	<img src="img/logos/families-logo.png" alt="Try Families" />
 				 </label>
-				 <input type="checkbox" name="families-check" value="families">
-				 
+				 <input class="families" type="checkbox" name="families-check" value="families">
+			</div>
+			<div class="field checkbox">
 				 <label for="prayer-check">
 				 	<img src="img/logos/prayer-logo.png" alt="Try... Prayer Team" />
 				 </label>
-				 <input type="checkbox" name="prayer-check" value="prayer">
-				 
+				 <input class="prayer" type="checkbox" name="prayer-check" value="prayer">
+			</div>
+			<div class="field checkbox">	 		 
 				 <label for="production-check">
 				 	<img src="img/logos/production-logo.png" alt="Try Production" />
 				 </label>
-				 <input type="checkbox" name="production-check" value="production">
-				 
+				 <input class="production" type="checkbox" name="production-check" value="production">
+			</div>
+			<div class="field checkbox">		 
 				 <label for="tech-check">
 				 	<img src="img/logos/tech-logo.png" alt="Try Tech" />
 				 </label>
-				 <input type="checkbox" name="tech-check" value="tech">
-				 
+				 <input class="tech" type="checkbox" name="tech-check" value="tech">
+			</div>
+			<div class="field checkbox">	 		 
 				 <label for="welcome-check">
 				 	<img src="img/logos/welcome-logo.png" alt="Try Welcome" />
 				 </label>
-				 <input type="checkbox" name="welcome-check" value="welcome">
-				 
+				 <input class="welcome" type="checkbox" name="welcome-check" value="welcome">
+			</div>
+			<div class="field checkbox">	 		 
 				 <label for="worship-check">
 				 	<img src="img/logos/worship-logo.png" alt="Try Worship" />
 				 </label>
-				 <input type="checkbox" name="worship-check" value="worship">
-			</div>	 
+				 <input class="worship"  type="checkbox" name="worship-check" value="worship">
+			</div>
+			<!-- Service -->
+			<div class="field checkbox service">	 		 
+				 <label for="south-check">
+				 	South:
+				 </label>
+				 <input class="south"  type="checkbox" name="south-check" value="south">
+			</div>
+			<div class="field checkbox service">	 		 
+				 <label for="central-check">
+				 	Central:
+				 </label>
+				 <input class="central"  type="checkbox" name="central-check" value="central">
+			</div>
+			<div class="field checkbox service">	 		 
+				 <label for="westend-check">
+				 	West End:
+				 </label>
+				 <input class="westend"  type="checkbox" name="westend-check" value="westend">
+			</div>
+			<div class="field checkbox service">	 		 
+				 <label for="east-check">
+				 	East:
+				 </label>
+				 <input class="east"  type="checkbox" name="east-check" value="east">
+			</div>	 	 
 			<!-- Name -->
 			<div class="field">
-			    <label for="name">Name:</label>
+			    <label class="worshipText" for="name">Name:</label>
 			    <input type="text" id="name" name="name" required>
 			</div>
 			<!-- Email -->
 			<div class="field">
-			    <label for="email">Email:</label>
+			    <label class="welcomeText" for="email">Email:</label>
 			    <input type="email" id="email" name="email" required>
 			</div>		    
 			<!-- Submit -->
-			<div class="field">
-			    <button type="submit">I'M IN</button>
+			<div class="field submit">
+			    <button class="imin" type="submit">I'M IN</button>
 			</div>
 		</form>
 	</div>

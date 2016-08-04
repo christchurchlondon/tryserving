@@ -47,7 +47,7 @@ body {
 .productionText {color: #0099a2;}
 .techText {color: #88449d;}
 .welcomeText {color: #fdc216;}
-.worshipText {color: #e30083;}
+.worshipText, .homeText {color: #e30083;}
 .greenText {color: #38ab4a;}
 
 /* Elements
@@ -249,8 +249,8 @@ span date {
 	text-align: center;
 	padding: 0 20%;
 }
-.section h2 {}
-.section p {}
+.section h2 {text-shadow: -2px 2px 4px #000;}
+.section p {text-shadow: -2px 2px 4px #000;}
 
 /* The Sections
 -------------------------*/
@@ -284,63 +284,104 @@ span date {
 /* I'm In */
 #section7 {
 	background-color: #FFF;
+	text-align: left;
+}
+#section7 p{
+	text-shadow: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 .field {
-  margin: 1em 0;
+	margin: 16px 0;
 }
-
+.field.checkbox {
+  margin: 8px 8px;
+  float: left;
+}
+.field.submit {
+	margin-top: 64px;
+	text-align: center;
+}
 label {
-/*
-  display: block;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  color: #999999;
-*/
+	display: inline-block;
+	vertical-align: middle;
+}
+form label img {
+	width: 200px;
 }
 
-input {
-/*
-  width: 100%;
-  padding: 0.5em 0.5em;
-  font-size: 1.2em;
-  border-radius: 3px;
-  border: 1px solid #D9D9D9;
-*/
+/*Checkboxes*/
+input[type='checkbox'] {
+	-webkit-appearance:none;
+    width:50px;
+    height:50px;
+    background:white;
+    border:4px solid #555;
+    vertical-align: middle;
 }
-
-textarea {
-  width: 100%;
-  height: 200px;
-  padding: 0.5em 0.5em;
-  font-size: 1.2em;
-  border-radius: 3px;
-  border: 1px solid #D9D9D9;
+input[type='checkbox'].families {
+	border-color: #ce684b;
 }
+input[type='checkbox']:checked.families {
+    background: #ce684b;
+}
+input[type='checkbox'].prayer {
+	border-color: #00b1e8;
+}
+input[type='checkbox']:checked.prayer {
+    background: #00b1e8;
+}
+input[type='checkbox'].production {
+	border-color: #0099a2;
+}
+input[type='checkbox']:checked.production {
+    background: #0099a2;
+}
+input[type='checkbox'].tech {
+	border-color: #88449d;
+}
+input[type='checkbox']:checked.tech {
+    background: #88449d;
+}
+input[type='checkbox'].welcome {
+	border-color: #fdc216;
+}
+input[type='checkbox']:checked.welcome {
+    background: #fdc216;
+}
+input[type='checkbox'].worship {
+	border-color:  #e30083;
+}
+input[type='checkbox']:checked.worship {
+    background:  #e30083;
+}
+.field.checkbox.service input[type='checkbox'] {
+	border-color:  black;
+}	
+.field.checkbox.service input[type='checkbox']:checked {
+	background: black;
+}
+input#name,
+input#email {border: none; border-bottom: 2px solid; font-size: 20px; font-family: 'londrina', Arial, sans-serif;width: 300px; }
+input#name {border-bottom-color:#e30083;color:#e30083;}
+input#email {border-bottom-color:#fdc216;color:#fdc216;}
 
 button {
-  display: inline-block;
-  border-radius: 3px;
-  border: none;
-  font-size: 0.9rem;
-  padding: 0.5rem 0.8em;
-  background: #69c773;
-  border-bottom: 1px solid #498b50;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  font-weight: bold;
-  margin: 0;
-  width: 100%;
-  text-align: center;
+	background: white;
+	border: 4px solid #38ab4a;
+	font-size: 36px; 
+	font-family: 'londrina', Arial, sans-serif;
+	width: 200px;
+	color: #38ab4a;
 }
-
-button:hover, button:focus {
-  opacity: 0.75;
-  cursor: pointer;
-}
-
-button:active {
-  opacity: 1;
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+button:hover {
+	border-color: #00b1e8;
+	color: #00b1e8;
+	cursor: pointer;
 }
 
 .success {
