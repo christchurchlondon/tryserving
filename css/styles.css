@@ -11,6 +11,8 @@ html, body {
 	box-sizing: border-box;
 	overflow:hidden;
 }
+/* Typography
+/* ======================*/
 @font-face{ 
 	font-family: 'londrina';
 	src: url('../fonts/LondrinaSolid-Regular-webfont.eot');
@@ -31,9 +33,18 @@ a {
 	background:white;
 	padding:2px;
 }
+/*Team Colors
+-------------------------*/
+.familiesText {color: #ce684b;}
+.prayerText {color: #00b1e8;}
+.productionText {color: #0099a2;}
+.techText {color: #88449d;}
+.welcomeText {color: #fdc216;}
+.worshipText {color: #e30083;}
+.greenText {color: #38ab4a;}
 
 /* Nav
-/* ======================*/
+/* =============================*/
 #hovers{
 	position:absolute;
 	left:0;
@@ -183,42 +194,52 @@ span date {
 
 
 /* Full Page Sections
-/* ======================*/
+/* =============================*/
 
+/* Fixed header and footer.
+* --------------------------------------- */
+#header {
+	position:fixed;
+	height: 50px;
+	display:block;
+	width: 100%;
+	background: #333;
+	z-index:9;
+	text-align:center;
+	color: #f2f2f2;
+	padding: 20px 0 0 0;
+}
+
+#header{
+	top:0px;
+}
+.fp-viewing-home #header{
+	display: none;
+}
 /* Set-up
 -------------------------*/
 .section{
 	background-size: cover;
-}
-.slide{
-	background-size: cover;
 	text-align: center;
-	padding: 64px;
+	padding: 0 20%;
 }
+.section h2 {}
+.section p {}
 
-/* To edit  ---> */
-/*
-#section0 {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size:cover;
+/* The Sections
+-------------------------*/
+/* Families */
+#section1 {
+	background-image:url(../img/bg/Families_BG.jpg);
 }
-.logo-holder {
-	width:100%; 
-	height:100%; 
-	background-position: center center;
-	background-repeat: no-repeat;
+#section1 h2 {}
+#section1 p {}
+/* Prayer */
+#section2 {
+	background-image:url(../img/bg/Prayer_BG.jpg);
 }
-
-/* What page? */
-.central.worship #section0 {
-	background-image:url(../img/bg/central-worship.jpg);
-}
-.worship .logo-holder {
-	background-image:url(../img/logos/worship-logo.png);
-}
-*/
-
+#section2 h2 {}
+#section2 p {}
 /* Media Queries
 /* ======================*/
 
