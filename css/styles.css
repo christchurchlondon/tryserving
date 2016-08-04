@@ -50,6 +50,21 @@ body {
 .worshipText {color: #e30083;}
 .greenText {color: #38ab4a;}
 
+/* Elements
+/* ======================*/
+a.imin {
+	display: inline-block;
+	padding: 8px 24px;
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+	border: 4px solid white;
+}
+a.imin:hover {
+	border-color: #38ab4a;
+	color: #38ab4a;
+}
+
 /* Nav
 /* =============================*/
 #hovers{
@@ -102,8 +117,8 @@ body {
 }
 
 .nav.top.dropdown:hover b{
-	background:#38ab4a;
-	color:white;
+/* 	background:#38ab4a; */
+/* 	color:white; */
 }
 
 .nav.top.dropdown:hover a,
@@ -117,7 +132,7 @@ body {
 .nav.top.dropdown a:hover,
 .nav.bottom.dropdown a:hover {
 	color:white;
-	background:#38ab4a;
+/* 	background:#38ab4a; */
 }
 .nav.top.dropdown a.families:hover,
 .nav.bottom.dropdown a.families:hover {
@@ -147,7 +162,6 @@ body {
 .nav.top.left a:hover:after,
 .nav.bottom.left a:hover:after {
 	content: " << " attr(data);
-	border-right:1px solid black;
 	padding-right:2px;
 	padding-left:4px;
 	font-weight:normal;
@@ -158,7 +172,6 @@ body {
 .nav.top.right a:hover:before,
 .nav.bottom.right a:hover:before {
 	content: attr(data) " >> ";
-	border-right:1px solid black;
 	padding-right:2px;
 	font-weight:normal;
 	font-size:22px;
@@ -198,8 +211,6 @@ span date {
 	background:black;
 	color:white;
 }
-
-
 /* Full Page Sections
 /* =============================*/
 
@@ -243,18 +254,118 @@ span date {
 
 /* The Sections
 -------------------------*/
+/* Home */
+#section0 p {}
+
 /* Families */
 #section1 {
 	background-image:url(../img/bg/Families_BG.jpg);
 }
-#section1 h2 {}
-#section1 p {}
 /* Prayer */
 #section2 {
 	background-image:url(../img/bg/Prayer_BG.jpg);
 }
-#section2 h2 {}
-#section2 p {}
+/* Production */
+#section3 {
+	background-image:url(../img/bg/Production_BG.jpg);
+}
+/* Tech */
+#section4 {
+	background-image:url(../img/bg/Tech_BG.jpg);
+}
+/* Welcome */
+#section5 {
+	background-image:url(../img/bg/Welcome_BG.jpg);
+}
+/* Worship */
+#section6 {
+	background-image:url(../img/bg/Worship_BG.jpg);
+}
+/* I'm In */
+#section7 {
+	background-color: #FFF;
+}
+.field {
+  margin: 1em 0;
+}
+
+label {
+/*
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #999999;
+*/
+}
+
+input {
+/*
+  width: 100%;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+*/
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+}
+
+button {
+  display: inline-block;
+  border-radius: 3px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8em;
+  background: #69c773;
+  border-bottom: 1px solid #498b50;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+button:hover, button:focus {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
 /* Media Queries
 /* ======================*/
 
