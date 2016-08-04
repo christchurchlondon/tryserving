@@ -27,11 +27,18 @@ body {
 	font-weight:bold;
 	font-size:32px;
 }
-a {
+.nav a {
 	color:black;
 	text-decoration:none;
 	background:white;
 	padding:2px;
+}
+#header a {
+	color: white;
+	text-decoration: none;
+}
+#header a:hover {
+	text-decoration: underline;
 }
 /*Team Colors
 -------------------------*/
@@ -212,10 +219,18 @@ span date {
 
 #header{
 	top:0px;
+	color: white;
 }
 .fp-viewing-home #header{
 	display: none;
 }
+.fp-viewing-families #header {background-color: #ce684b;}
+.fp-viewing-prayer #header {background-color: #00b1e8;}
+.fp-viewing-production #header {background-color: #0099a2;}
+.fp-viewing-tech #header {background-color: #88449d;}
+.fp-viewing-welcome #header {background-color: #fdc216;}
+.fp-viewing-worship #header {background-color: #e30083;}
+.fp-viewing-imin #header {background-color: #38ab4a;}
 /* Set-up
 -------------------------*/
 .section{
