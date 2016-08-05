@@ -440,11 +440,10 @@ button:hover {
 }
 /* Media Queries
 /* ======================*/
-//For when fullPage disengages
-@media screen and ( max-height: 680px ){
-    .section {
-/* 	    padding: 5% 20%; */
-    }
+/* For when fullPage disengages */
+@media only screen 
+and (max-height: 769px){
+	.nav {display: none;}
 }
 @media only screen
 and (max-width: 768px) {

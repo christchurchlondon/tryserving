@@ -227,7 +227,6 @@
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 			anchors: ['home', 'families', 'prayer', 'production', 'tech', 'welcome', 'worship', 'imin'],
-			//responsiveWidth: 769,
 			responsiveHeight: 769
 		});
 	});
@@ -236,6 +235,7 @@
 		            volume: 0, 
 		            loop: true,
 		            hd:true, 
+		            autoplay: true,
 		            adproof: true,
 		            annotations: false,
 		            onFinished: function() { console.log('finished') },
