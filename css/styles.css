@@ -371,6 +371,7 @@ form label img {
 /*Checkboxes*/
 input[type='checkbox'] {
 	-webkit-appearance:none;
+	border-radius: 0;
     width:50px;
     height:50px;
     background:white;
@@ -420,7 +421,7 @@ input[type='checkbox']:checked.worship {
 	background: black;
 }
 input#name,
-input#email {border: none; border-bottom: 2px solid; font-size: 20px; font-family: 'londrina', Arial, sans-serif;width: 300px; }
+input#email {border: none; border-bottom: 2px solid; font-size: 20px; font-family: 'londrina', Arial, sans-serif;width: 300px;border-radius: 0;}
 input#name {border-bottom-color:#e30083;color:#e30083;}
 input#email {border-bottom-color:#fdc216;color:#fdc216;}
 
@@ -447,6 +448,7 @@ button:hover {
 }
 @media only screen
 and (max-width: 768px) {
+	#section0 img {margin-top: 32px;}
 	.section img {
 		width: 243px;
 	}
