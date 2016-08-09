@@ -104,7 +104,7 @@
 	<div class="section" id="section4">
 	    <img src="img/logos/tech-logo.png" alt="Try... Tech Team" />
 	    <h2 class="greenText">Keep CCL switched on.</h2>
-	    <p class="techText">The tech team runs the audio and visual elements of our Sunday services, from song words to lights and sound. As you can imagine this is a hugely important role.<br/>If you're already skilled in these areas, we would love to hear from you, but if you're simply willing and eager to learn, we're happy to train you too. Sign up below or drop us a line to find out more.</p>
+	    <p class="techText">The tech team runs the audio and visual elements of our Sunday services, from song words to lights and sound. As you can imagine this is a hugely important role.<br/>If you're already skilled in these areas, we would love to hear from you, but if you're simply willing and eager to learn, we're happy to train you too.</p>
 	    <a class="imin" href="#imin">I'm In</a>	
 	</div>
 	
@@ -130,81 +130,91 @@
 	    <form id="ajax-contact" method="post" action="mailer.php">
 			<p><span class="greenText">I'M IN:</span> <span class="prayerText">(tick as appropriate)</span>
 			<!-- Team -->
-			<div class="field checkbox">
-				 <label for="families-check">
-				 	<img src="img/logos/families-logo.png" alt="Try Families" />
-				 </label>
-				 <input class="families" type="checkbox" name="families-check" value="families">
+			<div class="team-fields">
+				<div class="field checkbox">
+					 <label for="families-check">
+					 	<img src="img/logos/families-logo.png" alt="Try Families" />
+					 </label>
+					 <input class="families" type="checkbox" name="families-check" value="families">
+				</div>
+				<div class="field checkbox">
+					 <label for="prayer-check">
+					 	<img src="img/logos/prayer-logo.png" alt="Try... Prayer Team" />
+					 </label>
+					 <input class="prayer" type="checkbox" name="prayer-check" value="prayer">
+				</div>
+				<div class="field checkbox">	 		 
+					 <label for="production-check">
+					 	<img src="img/logos/production-logo.png" alt="Try Production" />
+					 </label>
+					 <input class="production" type="checkbox" name="production-check" value="production">
+				</div>
+				<div class="field checkbox">		 
+					 <label for="tech-check">
+					 	<img src="img/logos/tech-logo.png" alt="Try Tech" />
+					 </label>
+					 <input class="tech" type="checkbox" name="tech-check" value="tech">
+				</div>
+				<div class="field checkbox">	 		 
+					 <label for="welcome-check">
+					 	<img src="img/logos/welcome-logo.png" alt="Try Welcome" />
+					 </label>
+					 <input class="welcome" type="checkbox" name="welcome-check" value="welcome">
+				</div>
+				<div class="field checkbox">	 		 
+					 <label for="worship-check">
+					 	<img src="img/logos/worship-logo.png" alt="Try Worship" />
+					 </label>
+					 <input class="worship"  type="checkbox" name="worship-check" value="worship">
+				</div>
 			</div>
-			<div class="field checkbox">
-				 <label for="prayer-check">
-				 	<img src="img/logos/prayer-logo.png" alt="Try... Prayer Team" />
-				 </label>
-				 <input class="prayer" type="checkbox" name="prayer-check" value="prayer">
-			</div>
-			<div class="field checkbox">	 		 
-				 <label for="production-check">
-				 	<img src="img/logos/production-logo.png" alt="Try Production" />
-				 </label>
-				 <input class="production" type="checkbox" name="production-check" value="production">
-			</div>
-			<div class="field checkbox">		 
-				 <label for="tech-check">
-				 	<img src="img/logos/tech-logo.png" alt="Try Tech" />
-				 </label>
-				 <input class="tech" type="checkbox" name="tech-check" value="tech">
-			</div>
-			<div class="field checkbox">	 		 
-				 <label for="welcome-check">
-				 	<img src="img/logos/welcome-logo.png" alt="Try Welcome" />
-				 </label>
-				 <input class="welcome" type="checkbox" name="welcome-check" value="welcome">
-			</div>
-			<div class="field checkbox">	 		 
-				 <label for="worship-check">
-				 	<img src="img/logos/worship-logo.png" alt="Try Worship" />
-				 </label>
-				 <input class="worship"  type="checkbox" name="worship-check" value="worship">
-			</div>
+			
 			<!-- Service -->
-			<div class="field checkbox service">	 		 
-				 <label for="south-check">
-				 	South:
-				 </label>
-				 <input class="south"  type="checkbox" name="south-check" value="south">
+			<div class="service-fields">
+				<div class="field checkbox service">	 		 
+					 <label for="south-check">
+					 	South:
+					 </label>
+					 <input class="south"  type="checkbox" name="south-check" value="south">
+				</div>
+				<div class="field checkbox service">	 		 
+					 <label for="central-check">
+					 	Central:
+					 </label>
+					 <input class="central"  type="checkbox" name="central-check" value="central">
+				</div>
+				<div class="field checkbox service">	 		 
+					 <label for="westend-check">
+					 	West End:
+					 </label>
+					 <input class="westend"  type="checkbox" name="westend-check" value="westend">
+				</div>
+				<div class="field checkbox service">	 		 
+					 <label for="east-check">
+					 	East:
+					 </label>
+					 <input class="east"  type="checkbox" name="east-check" value="east">
+				</div>	
 			</div>
-			<div class="field checkbox service">	 		 
-				 <label for="central-check">
-				 	Central:
-				 </label>
-				 <input class="central"  type="checkbox" name="central-check" value="central">
-			</div>
-			<div class="field checkbox service">	 		 
-				 <label for="westend-check">
-				 	West End:
-				 </label>
-				 <input class="westend"  type="checkbox" name="westend-check" value="westend">
-			</div>
-			<div class="field checkbox service">	 		 
-				 <label for="east-check">
-				 	East:
-				 </label>
-				 <input class="east"  type="checkbox" name="east-check" value="east">
-			</div>	 	 
+			
 			<!-- Name -->
-			<div class="field name">
-			    <label class="worshipText" for="name">Name:</label>
-			    <input type="text" id="name" name="name" required>
+			<div class="contact-fields">
+				<div class="field name">
+				    <label class="worshipText" for="name">Name:</label>
+				    <input type="text" id="name" name="name" required>
+				</div>
+				<!-- Email -->
+				<div class="field">
+				    <label class="welcomeText" for="email">Email:</label>
+				    <input type="email" id="email" name="email" required>
+				</div>
 			</div>
-			<!-- Email -->
-			<div class="field">
-			    <label class="welcomeText" for="email">Email:</label>
-			    <input type="email" id="email" name="email" required>
-			</div>		    
-			<!-- Submit -->
-			<div class="field submit">
-			    <button class="imin" type="submit">I'M IN</button>
-			</div>
+			<div class="submit-fields">		    
+				<!-- Submit -->
+				<div class="field submit">
+				    <button class="imin" type="submit">I'M IN</button>
+				</div>
+			</div>		
 		</form>
 	</div>
 </div>
@@ -217,7 +227,7 @@
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 			anchors: ['home', 'families', 'prayer', 'production', 'tech', 'welcome', 'worship', 'imin'],
-			responsiveHeight: 680
+			responsiveHeight: 769
 		});
 	});
 	$(function(){
@@ -225,6 +235,7 @@
 		            volume: 0, 
 		            loop: true,
 		            hd:true, 
+		            autoplay: true,
 		            adproof: true,
 		            annotations: false,
 		            onFinished: function() { console.log('finished') },
@@ -237,6 +248,5 @@
 		});
 	});
 </script>
-
 </body>
 </html>
