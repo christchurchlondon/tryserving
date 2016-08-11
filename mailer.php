@@ -30,7 +30,7 @@
 			
 		}
 		if(isset($_POST['prayer-check'])) {
-			//array_push($recipients, "liam@christchurchlondon.org");
+			array_push($recipients, "liam@christchurchlondon.org");
 			$message .= 'Prayer, ';
 		}
 		if(isset($_POST['production-check'])) {
