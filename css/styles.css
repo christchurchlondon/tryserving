@@ -257,6 +257,9 @@ span date {
 /* The Sections
 -------------------------*/
 /* Home */
+#section0.unstarted {
+	background-image:url(../img/bg/Worship_BG.jpg);
+}
 #section0 img {width: 90%;}
 #section0 p {}
 
