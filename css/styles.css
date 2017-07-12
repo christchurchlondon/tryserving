@@ -1,0 +1,490 @@
+/* Set-up
+/* ======================*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+	overflow:hidden;
+}
+/* Typography
+/* ======================*/
+@font-face{ 
+	font-family: 'londrina';
+	src: url('../fonts/LondrinaSolid-Regular-webfont.eot');
+	src: url('../fonts/LondrinaSolid-Regular-webfont.eot?iefix') format('eot'),
+	     url('../fonts/LondrinaSolid-Regular-webfont.woff') format('woff'),
+	     url('../fonts/LondrinaSolid-Regular-webfont.ttf') format('truetype'),
+	     url('../fonts/LondrinaSolid-Regular-webfont.svg#webfont') format('svg');
+}
+body {
+	font-family: 'londrina', Arial, sans-serif;
+	color: #000;
+	font-weight:bold;
+	font-size:2.0em;
+}
+.nav a {
+	color:black;
+	text-decoration:none;
+	background:white;
+	padding:2px;
+}
+#header a {
+	color: white;
+	text-decoration: none;
+}
+#header a:hover {
+	text-decoration: underline;
+}
+/*Team Colors
+-------------------------*/
+.familiesText {color: #ce684b;}
+.prayerText {color: #00b1e8;}
+.productionText {color: #0099a2;}
+.techText {color: #88449d;}
+.welcomeText {color: #fdc216;}
+.worshipText, .homeText {color: #e30083;}
+.greenText {color: #38ab4a;}
+
+/* Elements
+/* ======================*/
+a.imin {
+	display: inline-block;
+	padding: 8px 24px;
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+	border: 4px solid white;
+	margin-bottom: 32px;
+}
+a.imin:hover {
+	border-color: #38ab4a;
+	color: #38ab4a;
+}
+.section img:first-child {margin-top: 32px;}
+
+/* Nav
+/* =============================*/
+#hovers{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index: 10;
+	pointer-events:none;
+}
+.nav {
+	position:fixed;
+	z-index:100;
+	padding:5px;
+}
+
+.nav.top.dropdown{
+	z-index:102;
+}
+
+.nav.left{
+	left:0;
+}
+
+.nav.right{
+	right:0;
+}
+
+.nav.top{
+	top:0;
+}
+
+.nav.bottom{
+	bottom:0;
+}
+
+.nav.top.dropdown a,
+.nav.bottom.dropdown a{
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+	float:left;
+	clear:both;
+	display:none;
+}
+
+.nav.top.right.dropdown a,
+.nav.bottom.right.dropdown a {
+	float: right;
+}
+
+.nav.top.dropdown:hover b{
+/* 	background:#38ab4a; */
+/* 	color:white; */
+}
+
+.nav.top.dropdown:hover a,
+.nav.bottom.dropdown:hover a{
+	display:inline-block;
+	background:white;
+	color:#000;
+	opacity:1;
+}
+
+.nav.top.dropdown a:hover,
+.nav.bottom.dropdown a:hover {
+	color:white;
+/* 	background:#38ab4a; */
+}
+.nav.top.dropdown a.families:hover,
+.nav.bottom.dropdown a.families:hover {
+	color: #ce684b;
+}
+.nav.top.dropdown a.prayer:hover,
+.nav.bottom.dropdown a.prayer:hover {
+	color: #00b1e8;
+}
+.nav.top.dropdown a.tech:hover,
+.nav.bottom.dropdown a.tech:hover {
+	color: #88449d;
+}
+.nav.top.dropdown a.production:hover,
+.nav.bottom.dropdown a.production:hover {
+	color: #0099a2;
+}
+.nav.top.dropdown a.welcome:hover,
+.nav.bottom.dropdown a.welcome:hover {
+	color: #fdc216;
+}
+.nav.top.dropdown a.worship:hover,
+.nav.bottom.dropdown a.worship:hover {
+	color: #e30083;
+}
+
+.nav.top.left a:hover:after,
+.nav.bottom.left a:hover:after {
+	content: " << " attr(data);
+	padding-right:2px;
+	padding-left:4px;
+	font-weight:normal;
+	font-size:22px;
+	vertical-align:middle;
+}
+
+.nav.top.right a:hover:before,
+.nav.bottom.right a:hover:before {
+	content: attr(data) " >> ";
+	padding-right:2px;
+	font-weight:normal;
+	font-size:22px;
+	vertical-align:middle;
+}
+
+span {
+	cursor:pointer;
+}
+
+span.mobile {
+	display:none;
+}
+
+span b {
+	clear:both;
+	background:white;
+	float:left;
+	padding:2px;
+}
+
+
+.nav.right b {
+	float:right;
+}
+
+span date {
+	color:#ccc;
+}
+
+.desktop span:hover b {
+	background:black;
+	color:white;
+}
+
+.desktop span a:hover {
+	background:black;
+	color:white;
+}
+/* Full Page Sections
+/* =============================*/
+
+/* Fixed header and footer.
+* --------------------------------------- */
+#header {
+	position:fixed;
+	height: 50px;
+	display:block;
+	width: 100%;
+	background: #333;
+	z-index:9;
+	text-align:center;
+	color: #f2f2f2;
+	padding: 20px 0 0px 0;
+}
+
+#header{
+	top:0px;
+	color: white;
+}
+.fp-viewing-home #header{
+	display: none;
+}
+.fp-viewing-families #header {background-color: #ce684b;}
+.fp-viewing-prayer #header {background-color: #00b1e8;}
+.fp-viewing-production #header {background-color: #0099a2;}
+.fp-viewing-tech #header {background-color: #88449d;}
+.fp-viewing-welcome #header {background-color: #fdc216;}
+.fp-viewing-worship #header {background-color: #e30083;}
+.fp-viewing-imin #header {background-color: #38ab4a;}
+/* Set-up
+-------------------------*/
+.section{
+	background-size: cover;
+	text-align: center;
+	padding: 0 20%;
+}
+.section h2 {text-shadow: -2px 2px 4px #000;}
+.section p {text-shadow: -2px 2px 4px #000;}
+
+/* The Sections
+-------------------------*/
+/* Home */
+#section0.unstarted {
+	background-image:url(../img/bg/Worship_BG.jpg);
+}
+#section0 img {width: 90%;}
+#section0 p {}
+
+/* Families */
+#section1 {
+	background-image:url(../img/bg/Families_BG.jpg);
+}
+/* Prayer */
+#section2 {
+	background-image:url(../img/bg/Prayer_BG.jpg);
+}
+/* Production */
+#section3 {
+	background-image:url(../img/bg/Production_BG.jpg);
+}
+/* Tech */
+#section4 {
+	background-image:url(../img/bg/Tech_BG.jpg);
+}
+/* Welcome */
+#section5 {
+	background-image:url(../img/bg/Welcome_BG.jpg);
+}
+/* Worship */
+#section6 {
+	background-image:url(../img/bg/Worship_BG.jpg);
+}
+/* I'm In */
+#section7 {
+	background-color: #FFF;
+	text-align: left;
+}
+#section7 p{
+	text-shadow: none;
+	margin-bottom: 0;
+}
+
+/* Field Sections */
+.team-fields,
+.service-fields,
+.contact-fields,
+.submit-fields {
+	clear: both;
+}
+.team-fields {
+	
+}
+.service-fields {
+	
+}
+.contact-fields {
+	
+}
+.contact-fields {
+	
+}
+.submit-fields {
+	
+}
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* Elements */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.field {
+	margin: 16px 0;
+}
+.field.checkbox {
+  margin: 8px 8px;
+  float: left;
+}
+.field.name {
+	clear: both;
+}
+.field.submit {
+	margin-top: 48px;
+	text-align: center;
+}
+label {
+	display: inline-block;
+	vertical-align: middle;
+}
+form label img {
+	width: 200px;
+}
+/*Checkboxes*/
+input[type='checkbox'] {
+	-webkit-appearance:none;
+	border-radius: 0;
+    width:50px;
+    height:50px;
+    background:white;
+    border:4px solid #555;
+    vertical-align: middle;
+}
+input[type='checkbox'].families {
+	border-color: #ce684b;
+}
+input[type='checkbox']:checked.families {
+    background: #ce684b;
+}
+input[type='checkbox'].prayer {
+	border-color: #00b1e8;
+}
+input[type='checkbox']:checked.prayer {
+    background: #00b1e8;
+}
+input[type='checkbox'].production {
+	border-color: #0099a2;
+}
+input[type='checkbox']:checked.production {
+    background: #0099a2;
+}
+input[type='checkbox'].tech {
+	border-color: #88449d;
+}
+input[type='checkbox']:checked.tech {
+    background: #88449d;
+}
+input[type='checkbox'].welcome {
+	border-color: #fdc216;
+}
+input[type='checkbox']:checked.welcome {
+    background: #fdc216;
+}
+input[type='checkbox'].worship {
+	border-color:  #e30083;
+}
+input[type='checkbox']:checked.worship {
+    background:  #e30083;
+}
+.field.checkbox.service input[type='checkbox'] {
+	border-color:  black;
+}	
+.field.checkbox.service input[type='checkbox']:checked {
+	background: black;
+}
+input#name,
+input#email {border: none; border-bottom: 2px solid; font-size: 20px; font-family: 'londrina', Arial, sans-serif;width: 300px;border-radius: 0;}
+input#name {border-bottom-color:#e30083;color:#e30083;}
+input#email {border-bottom-color:#fdc216;color:#fdc216;}
+
+button {
+	background: white;
+	border: 4px solid #38ab4a;
+	font-size: 36px; 
+	font-family: 'londrina', Arial, sans-serif;
+	width: 200px;
+	color: #38ab4a;
+}
+button:hover {
+	border-color: #000;
+	color: #000;
+	cursor: pointer;
+}
+/* Media Queries
+/* ======================*/
+/* For when fullPage disengages */
+@media only screen 
+and (max-height: 769px){
+	.nav {display: none;}
+}
+@media only screen
+and (max-width: 768px) {
+	#section0 img {margin-top: 32px;}
+	.section img {
+		width: 243px;
+	}
+	#section7 img {
+		width: 124px;
+	}
+	input[type='checkbox'] {
+		width: 30px;
+		height: 30px;
+	}
+}
+@media only screen
+and (min-width: 320px)
+and (max-width: 480px) {
+	body {
+		font-size: 1.5em;
+	}
+	#header {
+		font-size: 0.8em;
+		height: 30px;
+		padding: 10px 0 10px 0;
+	}
+	input#name,
+	input#email {
+		width: 180px;
+	}
+}
+/*
+@media only screen and (max-device-width: 480px) {
+	span.mobile{
+		display:inline-block;
+	}
+	span{
+		display:none;
+	}
+}
+*/
